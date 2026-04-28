@@ -21,7 +21,7 @@ The dataset is based on Queensland Government road crash records.
 
 Dataset source: https://www.data.qld.gov.au/dataset/crash-data-from-queensland-roads
 
-The original dataset is large and is not included in this repository. The cleaned dataset used for the visualisations was saved locally as `CrashData_clean.csv`.
+The original dataset is large and is not included in this repository. The cleaned dataset used for the visualisations was saved locally as `CrashData.csv`.
 
 ## 🧾 Dataset Description
 
