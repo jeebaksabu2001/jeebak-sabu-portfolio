@@ -35,7 +35,7 @@ The objectives of this project are to:
 
 The ERD below shows the main entities, attributes, and relationships in the Pulse Fitness database.
 
-![Pulse Fitness ERD](ERD%20Diagram.jpeg)
+<img width="3087" height="1544" alt="erd_diagram jpeg" src="https://github.com/user-attachments/assets/bc6afe6b-0f65-4ce7-9aac-b157ca2999ec" />
 
 ## Database Design
 
