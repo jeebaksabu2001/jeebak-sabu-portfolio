@@ -56,6 +56,6 @@ Here are the projects included in this portfolio. Each project folder contains i
 
 - **Name:** Jeebak Sabu  
 - **Location:** Sydney, Australia  
-- **LinkedIn:** [Add your LinkedIn profile link here](https://www.linkedin.com/in/jeebak-sabu-4612aa1a2/)  
+- **LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/jeebak-sabu-4612aa1a2/)  
 - **Email:** jeebaksabu2001@gmail.com  
-- **GitHub:** Add your GitHub profile link here  
+- **GitHub:** [Github projects](https://github.com/jeebaksabu2001/jeebak-sabu-portfolio/tree/main)  
