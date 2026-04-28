@@ -161,20 +161,6 @@ This section shows completed learning activities and certifications across:
 - Custom dashboard layout
 - Visual formatting and styling
 
-## 📁 Files Included
-
-- `JeebakCVdata.pbix` – Power BI dashboard file
-- `Jeebak_CV_Dashboard_Final.xlsx` – Excel dataset used for the dashboard
-- `README.md` – Project documentation
-
-## ▶️ How to View the Dashboard
-
-1. Download the `.pbix` file from this repository.
-2. Open it using Microsoft Power BI Desktop.
-3. Make sure the Excel dataset is available in the same folder.
-4. Refresh the data source if required.
-5. Explore the dashboard using the filters and visuals.
-
 ## 🧠 Skills Demonstrated
 
 - Power BI dashboard development
