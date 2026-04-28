@@ -1,181 +1,135 @@
-# Analyzing Koala Physical Traits and Conservation Outcomes
+# 🐨 Analyzing Koala Physical Traits and Conservation Outcomes
 
-## Project Summary
+## 📌 Project Summary
 
-This project analyses a koala physical characteristics dataset to explore patterns in koala body measurements and understand how different biological and environmental factors relate to koala size. The project was completed using Python in Jupyter Notebook and includes data cleaning, exploratory data analysis, data visualisation, statistical hypothesis testing, regression modelling, and conservation-focused recommendations.
+This project analyses koala physical characteristics to understand how biological and environmental factors relate to koala body size and variation. Using Python, the project applies data cleaning, exploratory data analysis, visualisation, hypothesis testing, regression modelling, and conservation-focused interpretation.
 
-The main purpose of this project was to identify important relationships between koala characteristics such as head length, skull width, foot length, paw size, and total body length, and to explain how these findings may support broader koala conservation strategies.
+The main goal is to identify important relationships between traits such as head length, skull width, foot length, paw size, and total body length, and explain how these insights can support koala conservation research.
 
-## Business and Research Context
+## 🎯 Project Objectives
 
-Koala conservation research often depends on understanding physical and biological differences across koala populations. This analysis focuses on identifying whether traits such as head length, foot length, paw size, and total length vary across gender, region, and habitat groups.
+- Clean and prepare a koala physical traits dataset.
+- Explore differences in koala characteristics across gender, region, and habitat.
+- Use statistical tests to compare physical traits.
+- Build regression models to predict total koala length.
+- Identify traits that may be useful for conservation monitoring.
 
-The insights from this project can help support conservation planning by identifying physical differences across populations, understanding environmental variation, and highlighting traits that may be useful for monitoring koala health and development.
+## 📊 Dataset Used
 
-## Dataset Used
+The dataset used in this project is `koalas_dataset.xlsx`.
 
-The dataset used in this project is `koalas_dataset.xlsx`. It contains physical, biological, and environmental measurements of koalas. The measurement values in the dataset are recorded in centimetres.
+The dataset contains physical, biological, and environmental measurements of koalas. Most measurement values are recorded in centimetres.
 
-### Dataset Columns
+## 🧾 Dataset Columns
 
-- **koala_id**: Unique identification number assigned to each koala in the dataset.
+| Column | Description |
+|---|---|
+| `koala_id` | Unique identification number for each koala |
+| `region` | Numeric region where the koala was recorded |
+| `habitat` | Habitat or state group, such as VIC or QLD |
+| `gender` | Gender of the koala |
+| `age_in_years` | Age of the koala in years |
+| `Paw Size` | Paw size in centimetres |
+| `total_length` | Total body length in centimetres |
+| `head_length` | Head length in centimetres |
+| `ear_size` | Ear size in centimetres |
+| `foot_length` | Foot length in centimetres |
+| `skull_width` | Skull width in centimetres |
+| `eye_diameter` | Eye diameter in centimetres |
+| `chest_circumference` | Chest circumference in centimetres |
+| `belly_circumference` | Belly circumference in centimetres |
 
-- **region**: Numeric variable representing the region where the koala was recorded.
-
-- **habitat**: Categorical variable representing the habitat or state group of the koala, such as VIC or QLD.
-
-- **gender**: Categorical variable representing the gender of the koala, recorded as male or female.
-
-- **age_in_years**: Numeric variable representing the age of the koala in years.
-
-- **Paw Size**: Numeric variable representing the paw size of the koala in centimetres.
-
-- **total_length**: Numeric variable representing the total body length of the koala in centimetres.
-
-- **head_length**: Numeric variable representing the head length of the koala in centimetres.
-
-- **ear_size**: Numeric variable representing the ear size of the koala in centimetres.
-
-- **foot_length**: Numeric variable representing the foot length of the koala in centimetres.
-
-- **skull_width**: Numeric variable representing the skull width of the koala in centimetres.
-
-- **eye_diameter**: Numeric variable representing the eye diameter of the koala in centimetres.
-
-- **chest_circumference**: Numeric variable representing the chest circumference of the koala in centimetres.
-
-- **belly_circumference**: Numeric variable representing the belly circumference of the koala in centimetres.
-
-## Tools and Technologies Used
+## 🛠️ Tools and Technologies Used
 
 - **Python**
-- **Pandas** – Data importing, cleaning, and transformation
-- **NumPy** – Numerical operations
+- **Pandas** – Data cleaning and preparation
+- **NumPy** – Numerical analysis
 - **Matplotlib** – Data visualisation
 - **Seaborn** – Statistical visualisation
 - **SciPy** – Hypothesis testing and ANOVA
-- **Statsmodels** – Linear regression and multiple regression modelling
-- **Jupyter Notebook** – Code development and analysis documentation
-- **Microsoft Excel** – Source dataset format
+- **Statsmodels** – Regression modelling
+- **Jupyter Notebook**
+- **Microsoft Excel**
 
-## Data Cleaning Process
+## 🧹 Data Cleaning Process
 
-The following data cleaning steps were completed before analysis:
+The dataset was cleaned and prepared before analysis. The main steps included:
 
-1. **Imported the dataset**
-   - Loaded the Excel dataset into Jupyter Notebook using Pandas.
-   - Reviewed the structure of the dataset using functions such as `head()`, `tail()`, `info()`, and `describe()`.
+- Imported the Excel dataset into Jupyter Notebook.
+- Checked dataset structure using `head()`, `info()`, and `describe()`.
+- Reviewed unique values in `region`, `habitat`, and `gender`.
+- Standardised inconsistent habitat values such as `VICtoria`, `Vic`, `Queensland`, `qld`, and `q`.
+- Standardised gender values such as `m` and `f` into `male` and `female`.
+- Handled missing values using median replacement within gender groups.
+- Checked for duplicate records.
+- Identified and treated outliers using boxplots and median replacement.
+- Reviewed distributions using histograms and skewness values.
 
-2. **Checked unique values**
-   - Reviewed unique values in key categorical columns such as `region`, `habitat`, and `gender`.
+## 📈 Analysis Performed
 
-3. **Standardised inconsistent values**
-   - Cleaned inconsistent habitat values such as `VICtoria`, `Vic`, `Queensland`, `Queenstown`, `qld`, and `q`.
-   - Standardised gender values such as `m` and `f` into `male` and `female`.
+### 1. Exploratory Data Analysis
 
-4. **Handled missing values**
-   - Checked missing values across the dataset.
-   - Missing values in columns such as `age_in_years`, `foot_length`, `skull_width`, and `belly_circumference` were handled using median values within gender groups.
+Exploratory analysis was used to understand the dataset structure, identify missing values, check inconsistent categories, and examine numerical distributions.
 
-5. **Checked duplicate records**
-   - The dataset was checked for duplicate rows to ensure that repeated records did not affect the analysis.
+### 2. Data Visualisation
 
-6. **Handled outliers**
-   - Boxplots were used to identify potential outliers in numerical variables.
-   - Outliers were treated using median replacement within gender groups to reduce the effect of extreme values.
+Several visualisations were created to compare koala traits across habitat, region, and gender.
 
-7. **Checked data distribution**
-   - Histograms and skewness values were used to understand the distribution of numerical variables after cleaning.
+Visualisations included:
 
-## Analysis Performed
+- Scatter plots
+- Grouped bar charts
+- Pairplots
+- Radar charts
+- Boxplots
+- Histograms
 
-## 1. Exploratory Data Analysis
+### 3. Hypothesis Testing
 
-Exploratory data analysis was conducted to understand the structure of the dataset, identify missing values, check inconsistent entries, examine numerical distributions, and prepare the data for statistical analysis.
+Statistical tests were used to compare koala traits.
 
-The cleaned dataset was then used to compare koala physical characteristics across gender, habitat, and region groups.
+**One-Sample T-Test**  
+A one-sample t-test was used to check whether the mean koala head length was significantly different from 92.0 mm. Since the dataset was in centimetres, 92.0 mm was converted to 9.2 cm.
 
-## 2. Data Visualisation
+**Independent Two-Sample T-Test**  
+A two-sample t-test was used to compare male and female koala head lengths.
 
-Two main types of visualisations were used to identify patterns in koala physical and biological characteristics.
+**ANOVA**  
+ANOVA tests were used to examine whether region had a significant effect on selected physical traits.
 
-### Total Length vs Age by Habitat
+### 4. Regression Modelling
 
-A scatter plot was created to compare koala total length against age, grouped by habitat. This helped explore whether older koalas showed clear differences in body length and whether these patterns varied between habitat groups.
+Regression models were used to predict total koala length.
 
-### Physical Trait Comparison by Region and Gender
+Models included:
 
-Visualisations such as grouped bar charts, pairplots, and radar charts were used to compare physical traits such as paw size, foot length, head length, chest circumference, and belly circumference. These helped identify differences in koala characteristics across regions and gender groups.
+- Simple linear regression using head length
+- Multiple linear regression using head length, skull width, and foot length
+- Extended regression using additional physical traits
 
-## 3. Hypothesis Testing and Statistical Analysis
+## 🔍 Key Findings
 
-### Mean Head Length Compared to 92.0 mm
-
-A one-sample t-test was conducted to determine whether the mean koala head length was significantly different from 92.0 mm. Since the dataset measurements were in centimetres, 92.0 mm was converted to 9.2 cm before testing.
-
-The result showed that the mean head length was significantly different from 9.2 cm.
-
-### Male and Female Head Length Comparison
-
-An independent two-sample t-test was conducted to compare the mean head length of male and female koalas.
-
-The result showed that there was no statistically significant difference between male and female koalas in terms of mean head length.
-
-### Predicting Total Length from Head Length
-
-A simple linear regression model was used to test whether total koala length could be predicted using head length.
-
-The model showed that head length was a statistically significant predictor of total length. However, the model explained only part of the variation, suggesting that total length is influenced by other physical traits as well.
-
-### Predicting Total Length from Multiple Factors
-
-A multiple linear regression model was created using head length, skull width, and foot length as predictors of total length.
-
-The model performed better than the simple regression model, showing that using multiple physical traits provides a stronger prediction of total koala length.
-
-### Effect of Region on Physical Characteristics
-
-ANOVA tests were performed to examine whether environmental factors such as region affected koala physical characteristics.
-
-The results showed that region had a statistically significant effect on traits such as head length, foot length, and paw size. This suggests that environmental or regional factors may contribute to differences in koala physical characteristics.
-
-### Factors Correlated with Total Length
-
-An extended regression model was used to identify which physical traits were associated with total length.
-
-The analysis showed that paw size, head length, and foot length were important predictors of total body length. Other variables such as skull width, eye diameter, belly circumference, chest circumference, and ear size showed weaker relationships in the extended model.
-
-## Key Findings
-
-- The dataset contained inconsistent values in `habitat` and `gender`, which were cleaned and standardised.
+- Inconsistent values in `habitat` and `gender` were cleaned and standardised.
 - Missing values were handled using median values within gender groups.
-- The mean koala head length was significantly different from 92.0 mm after converting the comparison value into centimetres.
+- The mean koala head length was significantly different from 9.2 cm.
 - Male and female koalas did not show a statistically significant difference in mean head length.
 - Head length was a useful predictor of total koala length.
-- A multiple regression model using head length, skull width, and foot length provided a stronger prediction of total length than head length alone.
-- Region had a statistically significant effect on selected physical traits such as head length, foot length, and paw size.
-- Paw size, head length, and foot length were among the strongest predictors of total koala length.
+- A multiple regression model using head length, skull width, and foot length performed better than a simple regression model.
+- Region had a significant effect on traits such as head length, foot length, and paw size.
+- Paw size, head length, and foot length were among the strongest predictors of total body length.
 
-## Recommendations
+## 💡 Recommendations
 
-Based on the analysis, conservation researchers should consider both biological and environmental factors when studying koala populations. Since region appears to influence physical traits, conservation strategies should avoid treating all koala populations as identical. Instead, monitoring programs should compare koalas across different regions and habitats to identify population-specific patterns.
+- Conservation researchers should consider both biological and regional factors when studying koala populations.
+- Koalas from different regions and habitats should not be treated as identical populations.
+- Physical traits such as paw size, head length, and foot length can support koala growth and health monitoring.
+- Future research should include larger datasets and environmental variables such as food availability, habitat quality, climate conditions, and disease status.
 
-Physical traits such as paw size, head length, and foot length may be useful indicators for understanding koala growth, body condition, and population variation. These traits can support conservation planning by helping researchers identify differences in koala health and development across habitats.
+## 🧠 Skills Demonstrated
 
-Future research should use larger datasets and include additional environmental variables such as food availability, habitat quality, climate conditions, and disease status. This would provide a more complete understanding of the factors affecting koala physical characteristics and long-term conservation outcomes.
-
-## Files Included
-
-- `koala_physical_traits_analysis.ipynb` – Jupyter Notebook containing the full Python analysis
-- `koalas_dataset.xlsx` – Excel dataset used for the analysis
-- `README.md` – Project documentation
-
-## Skills Demonstrated
-
-- Data importing from Excel
 - Data cleaning and preprocessing
 - Handling missing values
-- Standardising inconsistent categorical values
+- Standardising categorical values
 - Outlier detection and treatment
 - Exploratory data analysis
 - Data visualisation
@@ -187,6 +141,8 @@ Future research should use larger datasets and include additional environmental 
 - Multiple linear regression
 - Conservation-focused data interpretation
 
-## Conclusion
+## ✅ Conclusion
 
-This project demonstrates how Python can be used to clean, analyse, and interpret biological data for conservation research. The analysis showed that koala physical characteristics are influenced by multiple factors, including body measurements and regional differences. These insights can help support data-driven conservation strategies by improving understanding of koala population variation and physical development.
+This project demonstrates how Python can be used to analyse biological data and generate insights for conservation research. The analysis showed that koala physical characteristics are influenced by multiple traits and regional differences.
+
+Overall, the project highlights how data analysis can support a better understanding of koala population variation, physical development, and conservation planning.
