@@ -307,10 +307,6 @@ To view the dashboard:
 - Excel-based data structuring
 - Professional profile analytics
 
-## Note About Personal Information
-
-This dashboard contains personal CV information such as name, education, work history, email, and profile image. Before making the repository public, sensitive details can be removed or replaced with professional/public contact information.
-
 ## Conclusion
 
 This project demonstrates how Power BI can be used not only for business reporting but also for personal analytics and professional branding. By converting my resume into an interactive dashboard, this project showcases my ability to design structured datasets, build visual reports, communicate insights, and present information in a clear business intelligence format.
