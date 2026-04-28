@@ -141,50 +141,6 @@ File: `Flowchart task 3.pdf`
 
 The flowchart explains the MapReduce workflow, including input splitting, mapping, shuffling, reducing, and final output generation.
 
-## ▶️ How to Run the Project
-
-### Step 1: Start MongoDB
-
-Make sure MongoDB is installed and running locally.
-
-Default connection:
-
-`mongodb://localhost:27017/`
-
-### Step 2: Import the Dataset
-
-Import the original weather dataset into MongoDB.
-
-Database name:
-
-`Assignment_1`
-
-Collection name:
-
-`AUS_weather`
-
-### Step 3: Run the Scripts
-
-Run Task 1.1:
-
-`python task1_1.py`
-
-Run Task 1.2:
-
-`python task1_2.py observations.txt > output1_2.txt`
-
-Run Task 2.1:
-
-`python task2_1.py observations.txt > output2_1.txt`
-
-Run Task 2.2:
-
-`python task2_2.py observations.txt > output2_2.txt`
-
-Run Task 2.3:
-
-`python task2_3.py observations.txt > output2_3.txt`
-
 ## 🔍 Key Findings
 
 - Complete-year filtering ensured fair and consistent weather analysis across locations.
