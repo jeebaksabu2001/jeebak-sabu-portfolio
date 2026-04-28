@@ -55,16 +55,6 @@ This project includes two dashboard pages:
 1. Project Overview Page
 2. Superstore Analytics Dashboard Page
 
-## 🖼️ Dashboard Preview
-
-### Project Overview Page
-
-![Project Overview](images/project_overview.png)
-
-### Superstore Analytics Dashboard
-
-![Superstore Dashboard](images/superstore_dashboard.png)
-
 ## 📌 Key Dashboard Metrics
 
 | Metric | Current Value | Previous Year |
