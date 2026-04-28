@@ -1,66 +1,46 @@
-# Personal Analytics CV Power BI Dashboard
+# 👨‍💼 Personal Analytics CV Power BI Dashboard
 
-## Project Summary
+## 📌 Project Summary
 
-This project is an interactive Power BI dashboard that transforms my resume/CV information into a visual analytics dashboard. Instead of presenting my profile only through a traditional resume, this dashboard uses business intelligence techniques to show my skills, projects, work experience, tools, credentials, and education in a structured and data-driven format.
+This project is an interactive Power BI dashboard that transforms my resume/CV into a visual analytics report. Instead of presenting my profile only as a traditional resume, the dashboard highlights my skills, projects, experience, tools, credentials, and education in a structured and data-driven format.
 
-The purpose of this project is to demonstrate both my professional profile and my Power BI dashboard development skills in one portfolio project.
+The purpose of this project is to demonstrate both my professional profile and my Power BI dashboard development skills.
 
-## Dashboard Preview
+## 📊 Dashboard Preview
 
 <img width="745" height="1197" alt="power bi cv" src="https://github.com/user-attachments/assets/6a70d427-31a8-4e12-a4f3-bd101558c4be" />
 
+## 🎯 Project Objectives
 
-## Business Problem
+- Present my professional profile in an interactive dashboard format.
+- Summarise my skills, tools, credentials, work experience, and education.
+- Showcase selected analytics and business intelligence projects.
+- Demonstrate Power BI dashboard design and data storytelling skills.
+- Create a portfolio-ready dashboard for Data Analyst, Business Analyst, and BI Analyst roles.
 
-Traditional resumes can be static and text-heavy, making it difficult for recruiters and hiring managers to quickly understand a candidate’s skills, experience, projects, and learning background.
-
-This dashboard solves that problem by presenting my CV as an interactive data visualisation report. It allows viewers to explore my background using KPI cards, filters, tables, charts, and visual summaries.
-
-## Project Objectives
-
-The objectives of this dashboard are to:
-
-1. Present my professional profile in a visual and interactive format.
-2. Summarise my technical skills, soft skills, tools, and credentials.
-3. Showcase my academic, personal, and analytics projects.
-4. Highlight my work experience and education.
-5. Demonstrate Power BI dashboard design and data storytelling skills.
-6. Create a portfolio-ready dashboard for Data Analyst, Business Analyst, and BI Analyst roles.
-
-## Dataset Used
+## 📁 Dataset Used
 
 The dashboard uses a structured Excel dataset created from my personal CV and portfolio information.
 
-Dataset file:
+Dataset file: `Jeebak_CV_Dashboard_Final.xlsx`
 
-```text
-Jeebak_CV_Dashboard_Final.xlsx
-```
+The dataset includes:
 
-The dataset includes information about:
-
-- Skills
-- Skill categories
+- Skills and skill categories
 - Tools
 - Projects
 - Work experience
 - Credentials and learning
 - Education
-- Career interests
 - Project domains
 
-## Power BI File
+## 📌 Power BI File
 
-The Power BI dashboard file is:
-
-```text
-JeebakCVdata.pbix
-```
+Dashboard file: `JeebakCVdata.pbix`
 
 This file contains the data model, visuals, measures, filters, and dashboard layout.
 
-## Tools and Technologies Used
+## 🛠️ Tools and Technologies Used
 
 - **Power BI**
 - **Power Query**
@@ -68,25 +48,24 @@ This file contains the data model, visuals, measures, filters, and dashboard lay
 - **Microsoft Excel**
 - **Data Modelling**
 - **Dashboard Design**
-- **Data Visualisation**
 - **Business Intelligence Reporting**
 
-## Dashboard Sections
+## 📈 Dashboard Sections
 
-## 1. Profile Summary
+### 1. Profile Summary
 
-The top section of the dashboard includes my profile information, professional title, location, contact details, and a short summary of my background.
+The top section includes my profile image, name, professional title, location, email, and summary of my background.
 
-### Summary Highlights
+Key highlights include:
 
-- Experience in master data management using SAP ERP across UKI, US, and ANZ regions.
-- Experience in improving data accuracy, governance, and order processing efficiency.
-- Experience in streamlining bulk order workflows using automation frameworks and UFT scripting.
-- Experience in building Power BI dashboards and applying data analysis to support business decisions.
+- Master data management experience using SAP ERP.
+- Experience across UKI, US, and ANZ regions.
+- Workflow improvement using automation and UFT scripting.
+- Power BI dashboard development and business analysis experience.
 
-## 2. Key KPI Cards
+### 2. KPI Cards
 
-The dashboard includes summary KPI cards to provide a quick snapshot of my profile.
+The dashboard includes summary KPI cards that provide a quick snapshot of my profile.
 
 | Metric | Value |
 |---|---:|
@@ -97,13 +76,9 @@ The dashboard includes summary KPI cards to provide a quick snapshot of my profi
 | Tools | 10 |
 | Years of Experience | 4 |
 
-### Purpose
+### 3. Interactive Filters
 
-These KPI cards help viewers quickly understand the scale of my experience, learning, and project portfolio.
-
-## 3. Interactive Filters
-
-The dashboard includes slicers that allow users to filter the visuals by:
+The dashboard includes slicers for:
 
 - Skill Name
 - Capability Area
@@ -111,15 +86,11 @@ The dashboard includes slicers that allow users to filter the visuals by:
 - Tool Name
 - Domain
 
-### Purpose
+These filters allow viewers to explore specific parts of my profile based on their interests.
 
-These filters allow recruiters or viewers to explore specific parts of my profile based on their interest, such as analytics skills, Power BI projects, or technical tools.
+### 4. Skills Overview
 
-## 4. Skills Overview
-
-The Skills Overview table groups my skills into major skill areas.
-
-### Skill Areas Included
+The skills section groups my capabilities into key areas:
 
 - Business Intelligence
 - Data Analytics
@@ -127,64 +98,18 @@ The Skills Overview table groups my skills into major skill areas.
 - Professional Skills
 - Programming and Querying
 
-### Purpose
+### 5. Career History
 
-This section provides a structured view of my capabilities and helps show the breadth of skills relevant to analytics and business intelligence roles.
+This section summarises my professional experience.
 
-## 5. Skill Breakdown
+| Position Title | Company | Work Area | Industry | Location |
+|---|---|---|---|---|
+| Master Data Associate | Thomson Reuters | Operations | Information Services | Bengaluru, India |
+| Store Team Member | Woolworths | Retail | Retail | Sydney, Australia |
 
-The Skill Breakdown donut chart shows how my skills are distributed across different categories.
+### 6. Project Portfolio
 
-### Categories Included
-
-- Data Analytics
-- Digital Tools
-- Business Intelligence
-- Professional Skills
-- Programming and Querying
-
-### Purpose
-
-This visual helps show the balance between technical, analytical, business, and professional skills.
-
-## 6. Career History
-
-The Career History section summarises my professional experience in a table format.
-
-### Experience Included
-
-| Position Title | Company | Work Area | Industry | Region | Employment Type | Start Year | End Year | Location |
-|---|---|---|---|---|---|---:|---:|---|
-| Master Data Associate | Thomson Reuters | Operations | Information Services | UKI, ANZ, US | Full-time | 2021 | 2024 | Bengaluru, India |
-| Store Team Member | Woolworths | Retail | Retail | Australia | Part-time | 2025 | Present | Sydney, Australia |
-
-### Purpose
-
-This section highlights both my professional data background and current customer-facing work experience in Australia.
-
-## 7. Project Toolset
-
-The Project Toolset bar chart shows which tools were used across my project portfolio.
-
-### Tools Included
-
-- Excel
-- Python
-- NumPy
-- Pandas
-- Power BI
-- SQL
-- DAX Studio
-
-### Purpose
-
-This visual shows the practical tools I have used in analytics projects and highlights my hands-on technical experience.
-
-## 8. Project Portfolio
-
-The Project Portfolio section lists selected projects by project name, domain, and year.
-
-### Projects Included
+The dashboard lists selected projects across different analytics domains.
 
 | Project Name | Domain | Year |
 |---|---|---:|
@@ -195,104 +120,62 @@ The Project Portfolio section lists selected projects by project name, domain, a
 | Tata Data Visualisation Simulation | Retail Analytics | 2026 |
 | Used Car Price Prediction Project | Predictive Analytics | 2025 |
 
-### Purpose
+### 7. Credentials and Learning
 
-This section provides a clear overview of my practical analytics projects across different business and technical domains.
-
-## 9. Credentials and Learning
-
-The dashboard includes a credentials table showing completed courses, certifications, and learning activities.
-
-### Credentials Included
-
-- BA Foundations
-- Excel Basics
-- Excel BI
-- Finance Foundations
-- Google Data Analytics
-- Incubator Pitch
-- Power BI Analytics
-- SQL Advanced
-- What is BA
-
-### Purpose
-
-This section shows my continuous learning across business analysis, Excel, data analytics, finance, Power BI, SQL, and entrepreneurship.
-
-## 10. Learning Investment by Category
-
-This visual compares learning level and total learning hours by category.
-
-### Categories Included
+This section shows completed learning activities and certifications across:
 
 - Business Analysis
 - Excel
 - Data Analytics
-- Entrepreneurship
 - Finance
 - Power BI
 - SQL
+- Entrepreneurship
 
-### Purpose
-
-This section highlights where I have invested time in developing skills and shows my learning focus across different analytics-related areas.
-
-## 11. Education
-
-The education section summarises my academic background.
-
-### Education Included
+### 8. Education
 
 | Degree | Institution | Year | Result |
 |---|---|---:|---|
 | Master of Business Analytics | Macquarie University | 2026 | WAM: 76.25% |
 | Bachelor of Commerce | C.M.R. University | 2021 | CGPA: 8.56 |
 
-### Purpose
-
-This section connects my academic background with my career goals in analytics, business intelligence, and data-driven decision-making.
-
-## Key Insights
+## 🔍 Key Insights
 
 - The dashboard provides a complete visual summary of my academic, professional, and project background.
-- I have experience across data analytics, business intelligence, professional skills, digital tools, and programming/querying.
+- My skills cover data analytics, business intelligence, digital tools, professional skills, and programming/querying.
 - Power BI, Excel, Python, Pandas, NumPy, SQL, and DAX Studio are key tools used across my projects.
-- My project portfolio includes business analytics, predictive analytics, retail analytics, data analytics, and sales/finance analytics.
-- My work experience combines data operations experience at Thomson Reuters with retail customer-facing experience in Australia.
+- My portfolio includes projects in business analytics, predictive analytics, retail analytics, sales analytics, and finance analytics.
 - The dashboard demonstrates my ability to convert structured data into a professional and interactive Power BI report.
 
-## Power BI Features Used
+## 📊 Power BI Features Used
 
 - KPI cards
 - Slicers and filters
 - Tables and matrices
 - Donut chart
 - Bar chart
-- Line and column combination chart
+- Combo chart
 - Data model relationships
 - Power Query transformations
 - DAX measures
 - Custom dashboard layout
 - Visual formatting and styling
-- Resume data storytelling
 
-## Files Included
+## 📁 Files Included
 
 - `JeebakCVdata.pbix` – Power BI dashboard file
 - `Jeebak_CV_Dashboard_Final.xlsx` – Excel dataset used for the dashboard
 - `README.md` – Project documentation
 
-## How to View the Dashboard
-
-To view the dashboard:
+## ▶️ How to View the Dashboard
 
 1. Download the `.pbix` file from this repository.
 2. Open it using Microsoft Power BI Desktop.
-3. Ensure the Excel dataset is available in the same folder.
+3. Make sure the Excel dataset is available in the same folder.
 4. Refresh the data source if required.
-5. Explore the dashboard using the available filters and visuals.
+5. Explore the dashboard using the filters and visuals.
 
-## Skills Demonstrated
+## 🧠 Skills Demonstrated
 
 - Power BI dashboard development
 - Data modelling
@@ -303,12 +186,11 @@ To view the dashboard:
 - Business intelligence storytelling
 - Dashboard layout design
 - Interactive filtering
-- Data-driven portfolio presentation
 - Excel-based data structuring
 - Professional profile analytics
 
-## Conclusion
+## ✅ Conclusion
 
-This project demonstrates how Power BI can be used not only for business reporting but also for personal analytics and professional branding. By converting my resume into an interactive dashboard, this project showcases my ability to design structured datasets, build visual reports, communicate insights, and present information in a clear business intelligence format.
+This project demonstrates how Power BI can be used for personal analytics and professional branding. By converting my resume into an interactive dashboard, the project showcases my ability to structure data, build visual reports, communicate insights, and present information in a clear business intelligence format.
 
-The dashboard acts as both a digital CV and a portfolio project, highlighting my skills, experience, education, tools, credentials, and analytics projects in one interactive view.
+The dashboard acts as both a digital CV and a portfolio project.
