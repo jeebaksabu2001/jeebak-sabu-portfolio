@@ -8,7 +8,8 @@ The purpose of this project is to demonstrate both my professional profile and m
 
 ## Dashboard Preview
 
-![Personal Analytics CV Dashboard](images/cv_dashboard.png)
+<img width="745" height="1197" alt="power bi cv" src="https://github.com/user-attachments/assets/6a70d427-31a8-4e12-a4f3-bd101558c4be" />
+
 
 ## Business Problem
 
@@ -279,7 +280,6 @@ This section connects my academic background with my career goals in analytics, 
 
 - `JeebakCVdata.pbix` – Power BI dashboard file
 - `Jeebak_CV_Dashboard_Final.xlsx` – Excel dataset used for the dashboard
-- `images/cv_dashboard.png` – Dashboard screenshot
 - `README.md` – Project documentation
 
 ## How to View the Dashboard
