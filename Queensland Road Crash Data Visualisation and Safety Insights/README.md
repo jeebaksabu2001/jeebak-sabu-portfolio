@@ -4,7 +4,7 @@
 
 This project analyses Queensland road crash data to identify patterns in crash trends, geographic hotspots, crash severity, time-based risk, and crash-type severity. The project uses R and Python to clean, prepare, analyse, and visualise a large real-world government crash dataset.
 
-The main purpose of this project is to turn raw road crash records into clear visual insights that can support road safety planning, enforcement, infrastructure improvement, and public awareness.
+The main purpose of this project is to transform raw road crash records into clear visual insights that can support road safety planning, enforcement, infrastructure improvement, and public awareness.
 
 ## Business and Public Safety Context
 
@@ -32,17 +32,17 @@ Queensland Government - Crash data from Queensland roads
 https://www.data.qld.gov.au/dataset/crash-data-from-queensland-roads
 ```
 
-The original dataset was too large to upload directly to this GitHub repository. Instead, this repository includes the analysis scripts and documentation. The dataset can be downloaded from the Queensland Government open data portal using the link above.
+The original dataset is too large to upload directly to this GitHub repository. Instead, this repository includes the analysis scripts, notebook, report, and dataset structure. The full dataset can be downloaded from the Queensland Government open data portal using the link above.
 
-## Dataset Description
-
-The dataset contains police-reported crash records from Queensland roads. It includes crash timing, location, severity, crash nature, road conditions, weather conditions, vehicle involvement, casualty counts, and geographic information.
-
-The report used a cleaned version of the dataset called:
+The cleaned dataset used for the visualisations was saved locally as:
 
 ```text
 CrashData_clean.csv
 ```
+
+## Dataset Description
+
+The dataset contains police-reported crash records from Queensland roads. It includes crash timing, location, severity, crash nature, road conditions, weather conditions, vehicle involvement, casualty counts, and geographic information.
 
 ## Dataset Columns
 
@@ -207,7 +207,7 @@ This project includes five key visualisations.
 Script:
 
 ```text
-yearly_trend.R
+1. yearly trend.R
 ```
 
 ### Visualisation Type
@@ -233,7 +233,7 @@ The sharp decline around 2011 is likely linked to a reporting change rather than
 Script:
 
 ```text
-geographic_map.R
+2. geographic map.R
 ```
 
 ### Visualisation Type
@@ -254,22 +254,27 @@ The crash density map highlights stronger crash concentrations along coastal and
 
 These patterns likely reflect higher population density, traffic exposure, urban congestion, and major road corridors.
 
-### Important Security Note
+### Note About Google Maps API Key
 
-The original R script used a Google Maps API key for the map visualisation. API keys should never be uploaded publicly to GitHub.
+The geographic map visualisation uses Google Maps through the `ggmap` package. For security reasons, the Google Maps API key is not included in this repository.
 
-A safer approach is to store the key as an environment variable:
+To run the map script, create a local environment variable called `GOOGLE_MAPS_API_KEY` and store your own Google Maps API key there.
+
+Example:
 
 ```r
+Sys.setenv(GOOGLE_MAPS_API_KEY = "your_api_key_here")
 register_google(key = Sys.getenv("GOOGLE_MAPS_API_KEY"))
 ```
+
+Do not upload your actual API key to GitHub.
 
 ## 3. Annual Crash Severity Trends
 
 Script:
 
 ```text
-crash_severity_each_year.R
+3. Crash severity each year.R
 ```
 
 ### Visualisation Type
@@ -303,7 +308,7 @@ This shows why it is important to interpret crash trends carefully and avoid com
 Script:
 
 ```text
-crash_severity_by_hour.R
+4. Crash severity by hour of the day.R
 ```
 
 ### Visualisation Type
@@ -329,7 +334,7 @@ This suggests that enforcement and education campaigns may need to focus on time
 Script:
 
 ```text
-severity_distribution_by_crash_type.R
+5. Severity distribution across different crash types.R
 ```
 
 ### Visualisation Type
@@ -375,7 +380,7 @@ Although the data is public, crash records can still relate to sensitive real-wo
 
 The visualisations used clear titles, axis labels, legends, and appropriate chart types. Colours were selected to support interpretation without exaggerating results.
 
-## Business and Policy Recommendations
+## Road Safety Recommendations
 
 Based on the analysis, the following recommendations are suggested:
 
@@ -399,13 +404,13 @@ Based on the analysis, the following recommendations are suggested:
 
 ## Files Included
 
-- `yearly_trend.R` – R script for annual crash trend visualisation
-- `geographic_map.R` – R script for geographic crash density map
-- `crash_severity_each_year.R` – R script for annual crash severity trend visualisation
-- `crash_severity_by_hour.R` – R script for hourly crash severity proportions
-- `severity_distribution_by_crash_type.R` – R script for crash type and severity heatmap
-- `queensland_crash_analysis.ipynb` – Jupyter Notebook used for data preparation and analysis
-- `road_crash_visualisation_report.docx` – Written report explaining analysis, findings, ethics, and recommendations
+- `1. yearly trend.R` – R script for annual crash trend visualisation
+- `2. geographic map.R` – R script for geographic crash density map
+- `3. Crash severity each year.R` – R script for annual crash severity trend visualisation
+- `4. Crash severity by hour of the day.R` – R script for hourly crash severity proportions
+- `5. Severity distribution across different crash types.R` – R script for crash type and severity heatmap
+- `48085847_assignment2_jupyter.ipynb` – Jupyter Notebook used for data preparation and analysis
+- `48085847_assignement2_jeebak.docx` – Written report explaining analysis, findings, ethics, and recommendations
 - `README.md` – Project documentation
 
 ## Note About Dataset File
