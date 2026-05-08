@@ -25,6 +25,7 @@ Here are the projects included in this portfolio. Each project folder contains i
 | 11 | 🏋️ [Pulse Fitness SQL Database Design and Business Analytics](./Pulse%20Fitness%20SQL%20Database%20Design%20and%20Business%20Analytics/) | SQL, Database Design |
 | 12 | 🚗 [Queensland Road Crash Data Visualisation and Safety Insights](./Queensland%20Road%20Crash%20Data%20Visualisation%20and%20Safety%20Insights/) | R, Data Visualisation |
 | 13 | 📈 [Superstore Analytics Power BI Dashboard](./Superstore%20Analytics%20Power%20BI%20Dashboard/) | Power BI, Sales Analytics |
+| 14 | 🚘 [Used Car Price Prediction Using Machine Learning](./Used%20Car%20Price%20Prediction%20Using%20Machine%20Learning/) | Machine Learning, Regression |
 
 ## 🛠️ Technologies Used
 
@@ -58,4 +59,4 @@ Here are the projects included in this portfolio. Each project folder contains i
 - **Location:** Sydney, Australia  
 - **LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/jeebak-sabu-4612aa1a2/)  
 - **Email:** jeebaksabu2001@gmail.com  
-- **GitHub:** [Github projects](https://github.com/jeebaksabu2001/jeebak-sabu-portfolio/tree/main)  
+- **GitHub:** [GitHub Projects](https://github.com/jeebaksabu2001/jeebak-sabu-portfolio/tree/main)  
